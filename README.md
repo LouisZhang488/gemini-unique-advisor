@@ -32,7 +32,7 @@
 ---
 
 隐私与公开仓库规范（很重要）
-- system.sample.md可以公开作为通用模板，但个人具体prompt放在本地以免隐私泄露
+- `system.sample.md`可以公开作为通用模板，但个人具体prompt放在本地以免隐私泄露
 - 随时保留各个版本的prompt，防止模型数据污染造成回答准确性下降或是过拟合，必要时可进行回退
 - 推荐：把所有个人信息写成占位符或范围值，不写具体身份信息/联系方式/学校公司/真实资产等
 
@@ -59,14 +59,14 @@ F. Out-of-box Challenge（范式转移异议，指的是无论如何提出一个
 ---
 
 如何利用AI对system.sample.md个性化？
-1) 先填user_profile.template.md档案：约束、目标、资源、风险承受
-2) 将system.sample.md以及user_profile.filled.md复制到两个不同的文档，用大模型进行个人化生成，对应prompt见test_prompt.md
+1) 先填`user_profile.template.md`档案：约束、目标、资源、风险承受
+2) 将`system.sample.md`以及`user_profile.filled.md`复制到两个不同的文档，用大模型进行个人化生成，对应prompt见`test_prompt.md`
 3) 利用大模型进行语法规整，对应propmpt：使用XML标签把以下提示词“规整”一下。让ai可以更好理解且保证回答尽可能不失真
 
 
 如何用AI进行回归测试？（此方法仅是一个思路，目前测试结果未知）
 1) 推荐用其他同等水平大模型,如ChatGPT等，不建议用原本模型进行测试
-2) 选取比较成熟的模型内部对话，发送analysis_prompt.md中的prompt
+2) 选取比较成熟的模型内部对话，发送`analysis_prompt.md`中的prompt
 3) 将结果和原有LLM的prompt一起分给其他水平大模型，构建新prompt
 4) 再利用原有模型（gemini）对前后生成的prompt进行对比，选取更好的prompt
 5) 用XML标签进行prompt规整后更新LLM prompt
