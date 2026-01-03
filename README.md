@@ -65,11 +65,11 @@ F. Out-of-box Challenge（范式转移异议，指的是无论如何提出一个
 
 
 如何用AI进行回归测试？（此方法仅是一个思路，目前测试结果未知）
-1)推荐用其他同等水平大模型,如ChatGPT等，不建议用原本模型进行测试
-2）选取比较成熟的模型内部对话，发送analysis_prompt.md中的prompt
-3）将结果和原有LLM的prompt一起分给其他水平大模型，构建新prompt
-4）再利用原有模型（gemini）对前后生成的prompt进行对比，选取更好的prompt
-5）用XML标签进行prompt规整后更新LLM prompt
+1) 推荐用其他同等水平大模型,如ChatGPT等，不建议用原本模型进行测试
+2) 选取比较成熟的模型内部对话，发送analysis_prompt.md中的prompt
+3)将结果和原有LLM的prompt一起分给其他水平大模型，构建新prompt
+4)再利用原有模型（gemini）对前后生成的prompt进行对比，选取更好的prompt
+5)用XML标签进行prompt规整后更新LLM prompt
 
 ---
 
